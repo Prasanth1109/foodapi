@@ -34,7 +34,7 @@ async function start() {
           });
       });
 
-        app.use('/user/api/login', graphqlHTTP((req: any, res: any) => ({      
+        app.use('/api/userlogin', graphqlHTTP((req: any, res: any) => ({      
             schema: schema,
             graphiql: true,
             pretty: true,

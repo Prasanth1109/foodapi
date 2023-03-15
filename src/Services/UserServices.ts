@@ -14,7 +14,7 @@ export default class UserService extends UsersTable {
         try {
                 let entityManager = getManager();
                 let result = await entityManager.query(`
-                select * from tamfood_user.tbl_user tu where tu.email = ${input.email} and tu.password = ${input.password}
+                select * from tamfood_user.tbl_user tu where tu.email = "${input.email}" and tu.password = "${input.password}"
             `)                
             return result;
         } catch (error) {

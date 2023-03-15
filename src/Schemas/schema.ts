@@ -7,12 +7,13 @@ scalar Json
 scalar DateTime 
 
 input getUserInput{
+   userUniqueKey: String!
    email: String!
    password: String!
 }
 
 input userInput{
-   uniqueKey: String!
+   userUniqueKey: String!
    name: String!
    email: String!
    password: String!
